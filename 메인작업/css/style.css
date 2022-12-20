@@ -32,7 +32,8 @@ nav{width: 1200px; margin: 0 auto;
 }
 .nav_in li a{color: black;}
 
-.page01_content{width: 100%;
+.page01_content{width: 1200px;
+    margin: 0 auto;
     height:800px;
 }
 
@@ -51,11 +52,13 @@ nav{width: 1200px; margin: 0 auto;
     text-align: center;
     position: absolute;
     bottom: 90%;
+    right: -1555%;
 
 }
 
 .page01_box1 .box1_content li.down{
-transform: rotate( -360deg )
+    right: 0;
+transform: rotate( 213deg )
 
 }
 
@@ -65,84 +68,123 @@ transform: rotate( -360deg )
 }
 
 .page01_box1 .box1_content li:nth-child(1).down{bottom: 0;
-    background-color: #3f3500;
+    background: url(/img/icons8-j-50.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 transition: 1s all;
 }
 .page01_box1 .box1_content li:nth-child(2).down{bottom: 6%;
     transition: 2s all;
-    background-color: #4c4000;
-
+    background: url(/img/icons8-피-50.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
 }
 .page01_box1 .box1_content li:nth-child(3).down{bottom: 12%;
     transition: 3s all;
-
-    background-color: #594b00;
-
+    background: url(/img/icons8-에이-50.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .page01_box1 .box1_content li:nth-child(4).down{bottom: 18%;
     transition: 4s all;
-    background-color: #665600;
-
+    background: url(/img/icons8-큐-48.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .page01_box1 .box1_content li:nth-child(5).down{bottom: 24%;
     transition: 6s all;
-    background-color: #726000;
-
+    background: url(/img/icons8-에프-50.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .page01_box1 .box1_content li:nth-child(6).down{bottom: 30%;
     transition: 4s all;
-    background-color: #7f6b00;
-
+    background: url(/img/icons8-엘-50.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .page01_box1 .box1_content li:nth-child(7).down{bottom: 36%;
     transition: 2s all;
-    background-color: #8c7600;
-
+    background: url(/img/icons8-케이-50.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .page01_box1 .box1_content li:nth-child(8).down{bottom: 42%;
     transition: 4s all;
-    background-color: #998100;
-
+    background: url(/img/icons8-에스-48.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .page01_box1 .box1_content li:nth-child(9).down{bottom: 48%;
     transition: 2s all;
-    background-color: #a58b00;
-
+    background: url(/img/icons8-지-50.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .page01_box1 .box1_content li:nth-child(10).down{bottom: 54%;
     transition: 6s all;
-    background-color: #b29600;
-
+    background: url(/img/icons8-와이-50.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .page01_box1 .box1_content li:nth-child(11).down{bottom: 60%;
     transition: 1s all;
-    background-color: #bfa100;
-
+    background: url(/img/icons8-케이-50.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .page01_box1 .box1_content li:nth-child(12).down{bottom: 66%;
     transition: 2s all;
-    background-color: #ccac00;
+    background: url(/img/icons8-피-50.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
 }
 .page01_box1 .box1_content li:nth-child(13).down{bottom: 72%;
     transition: 3s all;
-    background-color: #d8b600;
+    background: url(/img/icons8-엘-50.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
 }
 .page01_box1 .box1_content li:nth-child(14).down{bottom: 78%;
     transition: 4s all;
-    background-color: #e5c100;
-
+    background: url(/img/icons8-와이-50.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .page01_box1 .box1_content li:nth-child(15).down{bottom: 84%;
     transition: 4s all;
-    background-color: #f2cc00;
+    background: url(/img/icons8-에이-50.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
 }
-.page01_box1 .box1_content li:nth-child(16).down{bottom: 90%;
+.page01_box1 .box1_content li:nth-child(16).down{bottom: 66%;
+    right: -1250%;
     transition: 1s all;
-    background-color: #ffd90c;
+    transform: rotate( -360deg );
+
+    background: url(/img/icons8-에이-50.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
 }
 
@@ -173,85 +215,132 @@ position: relative;
 
 .page01_box2 .box2_content li.down{
 right: 0;
-    transform: rotate( -180deg )
+    transform: rotate( 150deg )
     
     }
     
     .page01_box2 .box2_content li:nth-child(1).down{bottom: 0;
-        background-color: #fff5bf;
-
+        background: url(/img/icons8-v-50.png);
     transition: 2s all;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
     }
     .page01_box2 .box2_content li:nth-child(2).down{bottom: 6%;
         transition: 3s all;
-        background-color: #fff5bf;
+        background: url(/img/icons8-디-50.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     
     
     }
     .page01_box2 .box2_content li:nth-child(3).down{bottom: 12%;
         transition: 2s all;
-    
-        background-color: #fff3b2;
-    
+    background: url(/img/icons8-케이-50.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
     }
     .page01_box2 .box2_content li:nth-child(4).down{bottom: 18%;
         transition: 4s all;
-        background-color: #fff1a5;
+        background: url(/img/icons8-에프-50.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     
     }
     .page01_box2 .box2_content li:nth-child(5).down{bottom: 24%;
         transition: 3s all;
-        background-color: #ffef99;
+        background: url(/img/icons8-엔-50.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     
     }
     .page01_box2 .box2_content li:nth-child(6).down{bottom: 30%;
         transition: 2s all;
-        background-color: #ffed8c;
+        background: url(/img/icons8-와이-50.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     
     }
     .page01_box2 .box2_content li:nth-child(7).down{bottom: 36%;
         transition: 1s all;
-        background-color: #ffeb7f;
+        background: url(/img/icons8-유-48.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     
     }
     .page01_box2 .box2_content li:nth-child(8).down{bottom: 42%;
         transition: 7s all;
-        background-color: #ffe972;
+        background: url(/img/icons8-유형-50.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     
     }
     .page01_box2 .box2_content li:nth-child(9).down{bottom: 48%;
         transition: 1s all;
-        background-color: #ffe766;
+        background: url(/img/icons8-h-50.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     
     }
     .page01_box2 .box2_content li:nth-child(10).down{bottom: 54%;
         transition: 2s all;
-        background-color: #ffe559;
+        background: url(/img/icons8-에프-50.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     
     }
     .page01_box2 .box2_content li:nth-child(11).down{bottom: 60%;
         transition: 1s all;
-        background-color: #ffe34c;
+        background: url(/img/icons8-디-50.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     
     }
     .page01_box2 .box2_content li:nth-child(12).down{bottom: 66%;
         transition: 5s all;
-        background-color: #ffe13f;
+        background: url(/img/icons8-에스-48.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     
     }
     .page01_box2 .box2_content li:nth-child(13).down{bottom: 72%;
         transition: 3s all;
-        background-color: #ffdf33;
+        background: url(/img/icons8-케이-50.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     
     }
     .page01_box2 .box2_content li:nth-child(14).down{bottom: 78%;
         transition: 2s all;
-        background-color: #ffdd26;
+        background: url(/img/icons8-큐-48.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     
     }
-    .page01_box2 .box2_content li:nth-child(15).down{bottom: 84%;
+    .page01_box2 .box2_content li:nth-child(15).down{bottom: 66%;
+        right: -1050%;
         transition: 1s all;
-        background-color: #ffdb19;
+    transform: rotate( -360deg );
+
+        background: url(/img/icons8-h-50.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     
     }
  
@@ -284,80 +373,126 @@ right: 0;
     
     .page01_box3 .box3_content li.down{
         right: 0;
-        transform: rotate( -180deg )
+        transform: rotate( 2022deg )
         
         }
         
         .page01_box3 .box3_content li:nth-child(1).down{bottom: 0;
-            background-color: #fff5bf;
-        transition: 3s all;
-        transform: rotate( -360deg )
+            background: url(/img/icons8-h-50.png);
+            transition: 3s all;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        
+    
         }
         .page01_box3 .box3_content li:nth-child(2).down{bottom: 6%;
             transition: 4s all;
-            background-color: #fff3b2;
+            background: url(/img/icons8-j-50.png);
+    
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         
         
         }
         .page01_box3 .box3_content li:nth-child(3).down{bottom: 12%;
             transition: 2s all;
-        
-            background-color: #fff1a5;
+        background: url(/img/icons8-v-50.png);
+        background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         
         }
         .page01_box3 .box3_content li:nth-child(4).down{bottom: 18%;
             transition: 3s all;
-            background-color: #ffef99;
+            background: url(/img/icons8-기음-50.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         
         }
         .page01_box3 .box3_content li:nth-child(5).down{bottom: 24%;
             transition: 4s all;
-            background-color: #ffeb7f;
+            background: url(/img/icons8-디-50.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         
         }
         .page01_box3 .box3_content li:nth-child(6).down{bottom: 30%;
             transition: 3s all;
-            background-color: #ffe972;
+            background: url(/img/icons8-에스-48.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         
         }
         .page01_box3 .box3_content li:nth-child(7).down{bottom: 36%;
             transition: 4s all;
-            background-color: #ffe766;
+            background: url(/img/icons8-에이-50.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         
         }
         .page01_box3 .box3_content li:nth-child(8).down{bottom: 42%;
             transition: 3s all;
-            background-color: #ffe559;
+            background: url(/img/icons8-에프-50.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         
         }
         .page01_box3 .box3_content li:nth-child(9).down{bottom: 48%;
             transition: 4s all;
-            background-color: #ffe34c;
+            background: url(/img/icons8-엔-50.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         
         }
         .page01_box3 .box3_content li:nth-child(10).down{bottom: 54%;
             transition: 3s all;
-            background-color: #ffe13f;
+            background: url(/img/icons8-엘-50.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         
         }
         .page01_box3 .box3_content li:nth-child(11).down{bottom: 60%;
             transition: 4s all;
-            background-color: #ffdf33;
+            background: url(/img/icons8-와이-50.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         
         }
         .page01_box3 .box3_content li:nth-child(12).down{bottom: 66%;
             transition: 3s all;
-            background-color: #ffdd26;
+            background: url(/img/icons8-유-48.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         
         }
         .page01_box3 .box3_content li:nth-child(13).down{bottom: 72%;
             transition: 4s all;
-            background-color: #ffdb19;
+            background: url(/img/icons8-지-50.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         
         }
-        .page01_box3 .box3_content li:nth-child(14).down{bottom: 78%;
+        .page01_box3 .box3_content li:nth-child(14).down{bottom: 66%;
             transition: 3s all;
-            background-color: #ffd90c;
+            right: -850%;
+    transform: rotate( -360deg );
+
+            background: url(/img/icons8-엔-50.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         
         }
 
@@ -389,75 +524,103 @@ right: 0;
     
     .page01_box4 .box4_content li.down{
         right: 0;
-        transform: rotate( -180deg )
+        transform: rotate( 80deg )
         
         }
         
         .page01_box4 .box4_content li:nth-child(1).down{bottom: 0;
-            background-color: #f9f5d1;
+            background: url(/img/icons8-피-50.png);
         transition: 4s all;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
         }
         .page01_box4 .box4_content li:nth-child(2).down{bottom: 6%;
             transition: 5s all;
-            background-color: #f8f3cb;
-        
+            background: url(/img/icons8-큐-48.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         
         }
         .page01_box4 .box4_content li:nth-child(3).down{bottom: 12%;
             transition: 4s all;
-        
-            background-color: #f7f2c5;
-        
+            background: url(/img/icons8-케이-50.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         }
         .page01_box4 .box4_content li:nth-child(4).down{bottom: 18%;
             transition: 5s all;
-            background-color: #f6f1bf;
-        
+            background: url(/img/icons8-지-50.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         }
         .page01_box4 .box4_content li:nth-child(5).down{bottom: 24%;
             transition: 4s all;
-            background-color: #f6f0ba;
-        
+            background: url(/img/icons8-와이-50.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         }
         .page01_box4 .box4_content li:nth-child(6).down{bottom: 30%;
             transition: 5s all;
-            background-color: #f5eeb4;
-        
+            background: url(/img/icons8-엘-50.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         }
         .page01_box4 .box4_content li:nth-child(7).down{bottom: 36%;
             transition: 4s all;
-            background-color: #f4edae;
-        
+            background: url(/img/icons8-에프-50.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         }
         .page01_box4 .box4_content li:nth-child(8).down{bottom: 42%;
             transition: 5s all;
-            background-color: #f3eca8;
-        
+            background: url(/img/icons8-에이-50.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         }
         .page01_box4 .box4_content li:nth-child(9).down{bottom: 48%;
             transition: 4s all;
-            background-color: #f3eba3;
-        
+            background: url(/img/icons8-에스-48.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         }
         .page01_box4 .box4_content li:nth-child(10).down{bottom: 54%;
             transition: 5s all;
-            background-color: #f2e99d;
-        
+            background: url(/img/icons8-디-50.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         }
         .page01_box4 .box4_content li:nth-child(11).down{bottom: 60%;
             transition: 4s all;
-            background-color: #f1e897;
-        
+            background: url(/img/icons8-기음-50.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         }
         .page01_box4 .box4_content li:nth-child(12).down{bottom: 66%;
             transition: 5s all;
-            background-color: #f0e791;
-        
+            background: url(/img/icons8-v-50.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         }
-        .page01_box4 .box4_content li:nth-child(13).down{bottom: 72%;
+        .page01_box4 .box4_content li:nth-child(13).down{bottom: 66%;
+            right: -660%;
+            transform: rotate( -360deg );
             transition: 4s all;
-            background-color: #e4da85;
-        
+            background: url(/img/icons8-나는-50.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         }
 
      
@@ -482,78 +645,102 @@ bottom: 90%;
 
 .page01_box5 .box5_content li.down{
 
-    transform: rotate( -180deg )
+    transform: rotate( -59deg )
     
     }
     
     .page01_box5 .box5_content li:nth-child(1).down{bottom: 0;
-        background-color: #f7f4d8;
+        background: url(/img/icons8-j-50.png);
     transition: 5s all;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     }
     .page01_box5 .box5_content li:nth-child(2).down{bottom: 6%;
         transition: 6s all;
-        background-color: #f6f3d4;
-    
+        background: url(/img/icons8-v-50.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     
     }
     .page01_box5 .box5_content li:nth-child(3).down{bottom: 12%;
         transition: 5s all;
-    
-        background-color: #f5f2d0;
-    
+        background: url(/img/icons8-지-50.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
     .page01_box5 .box5_content li:nth-child(4).down{bottom: 18%;
         transition: 3s all;
-        background-color: #f4f1cc;
-    
+        background: url(/img/icons8-디-50.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
     .page01_box5 .box5_content li:nth-child(5).down{bottom: 24%;
         transition: 5s all;
-        background-color: #f3f0c7;
-    
+        background: url(/img/icons8-j-50.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
     .page01_box5 .box5_content li:nth-child(6).down{bottom: 30%;
         transition: 1s all;
-        background-color: #f3eec3;
-    
+        background: url(/img/icons8-케이-50.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
     .page01_box5 .box5_content li:nth-child(7).down{bottom: 36%;
         transition: 7s all;
-        background-color: #f2edbf;
-    
+        background: url(/img/icons8-유형-50.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
     .page01_box5 .box5_content li:nth-child(8).down{bottom: 42%;
         transition: 4s all;
-        background-color: #f1ecbb;
-    
+        background: url(/img/icons8-디-50.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
     .page01_box5 .box5_content li:nth-child(9).down{bottom: 48%;
         transition: 2s all;
-        background-color: #f0ebb6;
-    
+        background: url(/img/icons8-에스-48.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
     .page01_box5 .box5_content li:nth-child(10).down{bottom: 54%;
         transition: 6s all;
-        background-color: #efeab2;
-    
+        background: url(/img/icons8-큐-48.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
     .page01_box5 .box5_content li:nth-child(11).down{bottom: 60%;
         transition: 5s all;
-        background-color: #eee9ae;
-    
-    }
-    .page01_box5 .box5_content li:nth-child(12).down{bottom: 66%;
-        transition: 5s all;
-        background-color: #e2dca1;
-    
-    }
-    .page01_box5 .box5_content li:nth-child(13).down{bottom: 90%;
-        transition: 6s all;
-        background-color: #d6d099;
-    
+        background: url(/img/icons8-피-50.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 
-    
+
+    .page01_box5 .box5_content li:nth-child(12).down{bottom: 66%;
+        right: -480%;
+        transform: rotate( -360deg );
+        transition: 5s all;
+        background: url(/img/icons8-j-50.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+
 
 .page01_box6{
 position: relative;}
@@ -572,7 +759,7 @@ right: -400%;
 
 .page01_box6 .box6_content li.down{
     right: 0;
-    transform: rotate( -420deg )
+    transform: rotate( -420deg );
     
     }
     .page01_box6 .box6_content li:nth-child(1).down{bottom: 0;
@@ -652,9 +839,12 @@ right: -400%;
             background-repeat: no-repeat;
     
     }
-    .page01_box6 .box6_content li:nth-child(11).down{bottom: 60%;
+    .page01_box6 .box6_content li:nth-child(11).down{bottom: 66%;
+        right: -850%;
         transition: 6s all;
-        background: url(/img/icons8-와이-50.png);
+    transform: rotate( -360deg );
+
+        background: url(/img/icons8-엔-50.png);
         background-size: cover;
             background-position: center;
             background-repeat: no-repeat;

@@ -9,7 +9,7 @@
     <script src="/js/main.js"></script>
     <script>
         $(document).ready(function(){
-            $('.box1_content').click(function(){
+            $('.nav_in li').eq(0).click(function(){
                 $('.box1_content li').addClass('down')
                 $('.box2_content li').addClass('down')
                 $('.box3_content li').addClass('down')
@@ -56,11 +56,17 @@
                 $('.box15_content li').removeClass('down')
                 $('.box16_content li').removeClass('down')
                 $('.box17_content li').removeClass('down')
+                $('.box5_content li').removeClass('name')
+
                 // $('.box18_content li').removeClass('down')
                 // $('.box19_content li').removeClass('down')
                 // $('.box20_content li').removeClass('down')
 
 
+            })
+
+            $('.box16_content li').click(function(){
+                $('.box5_content li').addClass('name')
             })
 
        
