@@ -10,6 +10,8 @@
     <script>
         $(document).ready(function(){
             $('section').mouseenter(function(){
+                $('.nav_in li').addClass('act')
+
                 $('.box1_content li').addClass('down')
                 $('.box2_content li').addClass('down')
                 $('.box3_content li').addClass('down')
@@ -64,12 +66,63 @@
 
 
             })
+        
+                $('.nav_in li').hover(function(){
+                    $(this).addClass('on')
+                },function(){
+                     $(this).removeClass('on')
+                }
+                
+                )
 
-            $('.box16_content li').click(function(){
-                $('.box5_content li').addClass('name')
+            page02_move()
+            function page02_move(){
+            $('.page02_title').hover(function(){
+                $('.page02_title').addClass('move')
+                page02_liMove()
             })
-
+            
        
+          
+            function page02_liMove(){
+                $('.page02_content li').addClass('move')
+
+            $('.page02_content li').click(function(){
+            var a = $(this).index()
+            $('.page02_content li').eq(a).addClass('pick')
+            $('.page02_content .back').eq(a).addClass('on')
+            $('.page02_content li').removeClass('move')
+            $('.page02_title').addClass('pick')
+            $('.page02_title').text(a+1 +'st')
+            $('.page02_title').css({fontSize:'55px', color:'gray'})
+
+            
+            console.log(a)
+
+          
+
+        })
+
+        $('.page02_content .page02_text .back').mouseenter(function(){
+            $('.page02_content li').addClass('move')
+            $('.page02_content li').removeClass('pick')
+            $('.page02_content .back').removeClass('on')
+            $('.page02_title').removeClass('pick')
+            $('.page02_title').text('MainText')
+            $('.page02_title').css({fontSize:'35px',color:'black'})
+
+        })
+    }}
+        function page02_reMove(){
+            $('.page02_content li').removeClass('move')
+            $('.page02_title').removeClass('move')
+            $('.page02_title').css({fontSize:'60px',color:'black'})
+
+        }
+
+        $('.page02_se').mouseleave(function(){
+            page02_reMove()
+        })
         })
 
     </script>
@@ -81,10 +134,12 @@
                 <h1 class="header_logo">logo</h1>
                 <nav>
                     <ul class="nav_in">
-                        <li><a href="#">menu</a></li>
-                        <li><a href="#">menu</a></li>
-                        <li><a href="#">menu</a></li>
-                        <li><a href="#">menu</a></li>
+                        <li><a href="#">A</a>
+                          
+                        </li>
+                        <li><a href="#">B</a></li>
+                        <li><a href="#">C</a></li>
+                        <li><a href="#">D</a></li>
 
                      
 
@@ -358,7 +413,70 @@
 
             </div>
         </section>
-        <section>
+        <section class="page02_se">
+            <div class="page02">
+                <h1 class="page02_title">MainText</h1>
+        <ul class="page02_content">
+            <li>
+                <div class="page02_text">
+                    <h1>main_text</h1>
+                    <p>sub_text adfsdf</p>
+                    <p>sub_text adfsdf</p>
+                    <p>sub_text adfsdf</p>
+                    <p>sub_text adfsdf</p>
+                    <h1 class="back"> BACK</h1>
+
+                </div>
+            </li>
+
+            <li>
+                <div class="page02_text">
+                    <h1>main_text2</h1>
+                    <p>sub_text adfsdf</p>
+                    <p>sub_text adfsdf</p>
+                    <p>sub_text adfsdf</p>
+                    <p>sub_text adfsdf</p>
+                    <h1 class="back"> BACK</h1>
+
+
+
+
+                </div>
+            </li>
+            <li>
+                <div class="page02_text">
+                    <h1>main_text3</h1>
+                    <p>sub_text adfsdf</p>
+                    <p>sub_text adfsdf</p>
+                    <p>sub_text adfsdf</p>
+                    <p>sub_text adfsdf</p>
+                    <h1 class="back"> BACK</h1>
+
+
+
+
+                </div>
+            </li>
+            <li>
+                <div class="page02_text">
+                    <h1>main_text4</h1>
+                    <p>sub_text adfsdf</p>
+                    <p>sub_text adfsdf</p>
+                    <p>sub_text adfsdf</p>
+                    <p>sub_text adfsdf</p>
+                    <h1 class="back"> BACK</h1>
+
+
+
+
+                </div>
+            </li>
+
+
+        </ul>
+                
+            </div>
+
         </section>
         <section>
         </section>
