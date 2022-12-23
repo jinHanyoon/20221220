@@ -123,6 +123,41 @@
         $('.page02_se').mouseleave(function(){
             page02_reMove()
         })
+
+        $('.page03_right_text .text_button li').hover(function(){
+            var page03= $(this).index()
+            console.log(page03)
+            $(this).addClass('color')
+            $('.page03_right_text .text_button li img').eq(page03).addClass('move')
+            $('.page03_right_text .text_button p').eq(page03).fadeOut(300)
+        },
+            function(){
+        $('.page03_right_text .text_button p').fadeIn(300)
+            $('.page03_right_text .text_button li img').removeClass('move')
+            $(this).removeClass('color')
+
+    }
+        )
+
+        var current=0;
+        $('.page04_list li').click(function(){
+                var i= $(this).index()
+                console.log(i)
+                move(i)
+
+                function move(i){
+                if(current == i)return;//같은 버튼을 클릭했을때 실행되지 않게 함 
+                let currentE1 = $('.page04_photo li').eq(current);//슬라이드에서 현재보이는 이미지 li
+                let nextE1 = $('.page04_photo li').eq(i); //슬라이드에서 다음에 보이는 이미지 li
+
+
+                currentE1.css({opacity:1}).stop().animate({opacity:0})
+                nextE1.css({opacity:0}).stop().animate({opacity:1})
+                current =i
+            
+        }
+            })
+
         })
 
     </script>
@@ -471,16 +506,68 @@
 
                 </div>
             </li>
+        </ul>   
+            </div>
+        </section>   
+        <section class="page03_se">
+            <div class="page03">
+                <div class="page03_left">
+                    <ul class="page03_list">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    
+                </div>
+                <div class="page03_right">
+                    <div class="page03_right_text">
+                        <h1>mainText</h1>
+                        <h1>mainText</h1>
+                        <p>sub Text sub Textsub Textsub Textsub Textsub Textsub Text</p>
+                        <p>sub Textsub Textsub Textsub Textsub Textsub Textsub Textsub Text/p>
+                        <ul class="text_button">
 
+                            <li>
+                                <img src="/img/icons8-와이-50.png">
+                                <p>hover button</p>
+                            </li>
+                            <li>
+                                <img src="/img/icons8-j-50.png">
+                                <p>hover button</p>
+                            </li>
 
-        </ul>
+                        </ul>
+                        
+                        
+                    </div>
+
+                </div>
+
+                        </div>
+        </section>
+        <section class="page04_se">
+            <div class="page04">
+                <div class="page04_left">
+                    <ul class="page04_photo">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        
+                    </ul>
+
+                </div>
+                <div class="page04_right">
+                    <ul class="page04_list">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+
+                </div>
                 
             </div>
-
-        </section>
-        <section>
-        </section>
-        <section>
         </section>
         <section>
         </section>
