@@ -9,7 +9,10 @@
     <script src="/js/main.js"></script>
     <script>
         $(document).ready(function(){
+            $('.page04_list li').eq(0).addClass('on')
             $('section').mouseenter(function(){
+            $('.page05_content li video').hide()
+
                 $('.nav_in li').addClass('act')
 
                 $('.box1_content li').addClass('down')
@@ -154,9 +157,35 @@
                 currentE1.css({opacity:1}).stop().animate({opacity:0})
                 nextE1.css({opacity:0}).stop().animate({opacity:1})
                 current =i
+                $('.page04_list li').removeClass('on')
+                $('.page04_list li').eq(i).addClass('on')
             
         }
             })
+
+        $('.page05_content li').hover(function(){
+            var page05 = $(this).index()
+            $('.move_05').eq(page05).addClass('move')
+            $('.move_052').eq(page05).addClass('move')
+            $('.page05_content li video').eq(page05).fadeIn(800)
+            $('.page05_text .move_p2').eq(page05).addClass('move')
+            $('.page05_text .move_p1').eq(page05).addClass('move')
+            $('.page05_text .basic_text').eq(page05).addClass('move')
+            $('.page05_text .basic_text2').eq(page05).addClass('move')
+            $('.page05_text .basic_text3').eq(page05).addClass('move')
+            $('.page05_text .basic_text4').eq(page05).addClass('move')
+
+
+        },function(){
+
+        }
+        
+        )
+        $('.page05').mouseenter(function(){
+            $('.page05_content li video').fadeOut(1500)
+            $('.move_05 , .move_052 , .page05_text p ,.page05_text h2').removeClass('move')
+
+        })
 
         })
 
@@ -569,7 +598,73 @@
                 
             </div>
         </section>
-        <section>
+        <section class="page05_se">
+            <div class="page05">
+                <ul class="page05_content">
+                    <li>
+                        <video src="/video/page05_video (1).mp4" muted autoplay loop>
+                        </video>
+                    
+                        <div class="page05_text">
+                            <h2 class="basic_text">City</h2>
+                            <h2 class="basic_text2">Building</h2>
+                            <h2 class="basic_text3">text</h2>
+                            <h2 class="basic_text4">text</h2>
+                            <p class="move_p1">text</p>
+                            <p class="move_p2">text</p> 
+                            <h1 class="move_05">City</h1>
+                            <h1 class="move_052">Building</h1>
+                        </div>
+
+                    </li>
+                    <li>
+                        <video src="/video/page05_video (2).mp4" muted autoplay loop>
+                        </video>
+                        <div class="page05_text">
+                            <h2 class="basic_text">City</h2>
+                            <h2 class="basic_text2">Sunset</h2>
+                            <h2 class="basic_text3">text</h2>
+                            <h2 class="basic_text4">text</h2>
+                            <p class="move_p1">text</p>
+                            <p class="move_p2">text</p> 
+                            <h1 class="move_05">City</h1>
+                            <h1 class="move_052">Sunset</h1>
+                        </div>
+
+                    </li>
+                    <li>
+                        <video src="/video/page05_video (3).mp4" muted autoplay loop>
+                        </video>
+                        <div class="page05_text">
+                            <h2 class="basic_text">City</h2>
+                            <h2 class="basic_text2">Night view</h2>
+                            <h2 class="basic_text3">text</h2>
+                            <h2 class="basic_text4">text</h2>
+                            <p class="move_p1">text</p>
+                            <p class="move_p2">text</p> 
+                            <h1 class="move_05">City</h1>
+                            <h1 class="move_052">Night view</h1>
+                        </div>
+
+                    </li>
+                    <li>
+                        <video src="/video/page05_video (4).mp4" muted autoplay loop>
+                        </video>
+                        <div class="page05_text">
+                            <h2 class="basic_text">City</h2>
+                            <h2 class="basic_text2">House</h2>
+                            <h2 class="basic_text3">text</h2>
+                            <h2 class="basic_text4">text</h2>
+                            <p class="move_p1">text</p>
+                            <p class="move_p2">text</p> 
+                            <h1 class="move_05">City</h1>
+                            <h1 class="move_052">House</h1>
+                        </div>
+
+                    </li>
+
+                </ul>
+            </div>
         </section>
         
     </div>
