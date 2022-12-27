@@ -1730,7 +1730,7 @@ color: #f8f8f8;
     float: left;
 }
 .page03_left .page03_list li:nth-child(1){
-    background: url(/img/beauty-g25d96ace6_1280.jpg);
+    background: url(/img/page03_img\ \(1\).jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1740,7 +1740,7 @@ color: #f8f8f8;
 
 }
 .page03_left .page03_list li:nth-child(2){
-    background: url(/img/guilloche-g2f25464c6_1280.png);
+    background: url(/img/page03_img\ \(2\).jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1789,6 +1789,7 @@ margin: 50px;
 width: 220px;
 height: 80px;
 float: left;
+font-weight: bold;
 margin-left: 20px;
 cursor: pointer;
 
@@ -1819,6 +1820,14 @@ cursor: pointer;
     float: right;
     margin: 25px 20px 0 0;
 
+}
+
+.page03_right_text h1.color{
+    border-bottom: 3px solid black;
+    box-sizing: border-box;
+    height: auto;
+    margin-bottom: 6%;
+    transition: 2s all;
 }
 
 
@@ -2257,7 +2266,6 @@ footer {
 .M_button{display: block;}
 .M_menu{width: 30%;
     z-index: 1999;
-    text-align: right;
     position: absolute;
     right: 0%;
     height: 400px;
