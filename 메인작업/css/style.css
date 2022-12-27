@@ -68,9 +68,28 @@ position: relative;
 
 }
 
-.nav_in li a{color: black;}
+.nav_in li a{color: black;
+}
+.nav_in li span{}
+.M_button{width: 50px; height: 50px;
+    background: url(/img/icons8-둥근-메뉴-60.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 5%;
+    top:0;
+    display: none;
+}
+.M_menu{
+    text-align: center;
+    width: 100%;
+ 
+}
+.M_menu li{
+width: 100%;
 
-
+}
 .page01_content{width: 1200px;
     margin: 0 auto;
     height:800px;
@@ -91,6 +110,7 @@ position: relative;
     text-align: center;
     position: absolute;
     bottom: 90%;
+ 
     right: -1555%;
 
 }
@@ -2054,3 +2074,301 @@ left: 10%;
 }
 
 
+
+footer {
+    width: 100%;
+    height: 300px;
+    background-color: black;
+  }
+  .footer_box {
+    width: 1200px;
+    margin: 0 auto;
+  
+    height: 300px;
+  }
+  .footer_left {
+    width: 400px;
+    height: 300px;
+    position: relative;
+    float: left;
+  }
+  .footer_left h1 {
+    width: 100%;
+    transition: all 1.5s;
+    text-align: center;
+    display: inline-block;
+    margin: 30% 0;
+    font-size: 50px;
+    color: #f8f8f8;
+    position: absolute;
+    left: 100%;
+    border-bottom: 1px solid #f8f8f8;
+  }
+  
+  .footer_left h1.on {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    transition: all 1s;
+    border: none;
+    border-radius: 0;
+    font-size: 35px;
+  }
+  .footer_left.on {
+    height: 100%;
+    transition: 2s all;
+    background-color: rgb(61, 60, 60);
+  }
+  
+  .footer_right {
+    width: 800px;
+    height: 300px;
+    float: left;
+    color: #f8f8f8;
+  }
+  
+  .footer_right .footer_content li {
+    width: 250px;
+    cursor: pointer;
+    text-align: left;
+    float: left;
+    height: 300px;
+    margin-left: 13px;
+  }
+  .footer_right .footer_content li.on {
+    background-color: rgb(61, 60, 60);
+    background-size: cover;
+    transition: 1s all;
+  }
+  .footer_content h1 {
+    width: 100%;
+    margin-top: 15%;
+    padding: 1rem;
+    font-size: 26px;
+  }
+  .footer_content .footer_text {
+    width: 100%;
+    height: 180px;
+  }
+  .footer_content .footer_text p {
+    padding: 1rem;
+    font-size: 14px;
+  }
+
+
+
+@media screen and (max-width: 1024px) {
+    header{width: 100%;}
+    .header_in{width: 100%;}
+    .header_logo{width:15%;}
+    nav{width: 100%;}
+    .nav_in{width: 100%;}
+    .nav_in li{width: 20%;}
+    .page01_content{width: 100%;}
+    .page01_content > div > li{
+        height: 5%;
+    }
+
+
+    .page02{width: 100%;}
+    .page02_content li{
+        width: 22%;
+    }
+    .page03{width: 100%;}
+    .page03_left{width: 50%;}
+    .page03_left .page03_list li {height: auto;}
+    .page03_left .page03_list li:nth-child(1){
+        width: 50%;
+    }
+    .page03_left .page03_list li:nth-child(2){
+        width: 50%;
+    }
+    .page03_left .page03_list li:nth-child(3){
+        width: 100%;
+    }
+
+    .page03_right{width: 50%;}
+    .page03_right_text{
+        margin-top: 7.8%;
+    }
+    .page03_right_text h1{
+        margin-left: 7.8%;
+    }
+    .page03_right_text p{
+        margin-left: 7.8%;
+    }
+    .page03_right_text .text_button{
+        margin: 4.8%
+    }
+    .page03_right_text .text_button li{
+        margin-left: 7.8%;
+    }
+    .page04{width: 100%;}
+    .page04_left{width: 78%;}
+    .page04_right{width: 22%;}
+    .page04_right .page04_list{
+        margin: 0 4.8% 0 4.8%;
+    }
+    .page04_right .page04_list li{
+        width: 90%;
+
+    }
+     .page05{width: 100%;
+        margin-top:8.7% ;
+    }
+    .page05_content li {width: 49%;}
+    .page05_text p{
+        margin-left: 2.9%;
+    }
+    .page05_text h1{
+        margin-left: 2.9%;
+    }
+    footer {
+        width: 100%;
+      }
+      .footer_box {
+        width: 100%;
+      }
+      .footer_left {
+        width: 39%;
+      }
+      .footer_right {
+        width: 60%;
+      }
+      .footer_right .footer_content li {
+        width: 30%;
+        margin-left: 1.2%;
+      }
+      .footer_content h1 {
+        padding: 5%;
+        font-size: 16px;
+    
+      }
+      .footer_right .footer_text p {
+        padding: 5%;
+      }
+}
+
+@media screen and (max-width: 767px){
+
+
+
+.nav_in li{display: none;}
+.M_button{display: block;}
+.M_menu{width: 30%;
+    z-index: 1999;
+    text-align: right;
+    position: absolute;
+    right: 0%;
+    height: 400px;
+    background-color: rgba(204, 204, 204, 0.205);
+}
+.M_menu li {
+    font-weight: 500;
+    cursor: pointer;
+    height: 100px;
+    line-height: 100px;
+}
+.M_menu li:hover{
+    background-color: #726b6b;
+}
+
+.page01_content > div {width: 5.7%}
+
+.page02{width: 100%;}
+
+.page02_title{left: 20%;}
+.page02_content li {height: 200px;}
+.page02_content .page02_text p{
+    font-size: 15%;
+}
+.page02_content .page02_text h1{
+    font-size: 100%;
+}
+
+    footer {
+        width: 100%;
+      }
+      .footer_box {
+        width: 100%;
+      }
+      .footer_left {
+        width: 30%;
+      }
+      .footer_left h1 {
+        width: 100%;
+        font-size: 16px;
+        margin-top: 50%;
+      }
+      .footer_left h1.on{
+        font-size: 16px;
+      }
+      .footer_right {
+        width: 70%;
+        height: auto;
+      }
+      .footer_right .footer_content li {
+        width: 30%;
+        height: auto;
+    
+        margin-left: 1.6%;
+      }
+      .footer_content h1 {
+        font-size: 14px;
+        margin-top: 50%;
+      }
+      .footer_content .footer_text p {
+        font-size: 10px;
+      }
+      .page03_se{height: 900px;}
+      .page03{width: 100%;
+        height: 900px;}
+      .page03_left{
+        width: 100%;
+        height: 350px;
+      }
+      .page03_right{
+        width: 100%;
+        height: 700px;
+      }
+      .page03_right_text .text_button{
+        width: 100%;
+        margin-left: 0;
+      }
+      .page03_right_text .text_button li{
+        width: 50%;
+        float: left;
+      }
+      .page03_left .page03_list li:nth-child(1){
+        display: none;
+      }
+      .page03_left .page03_list li:nth-child(2){
+        display: none;
+      }
+      .page03_left .page03_list li:nth-child(3){}
+
+      .page04_se{
+        height: 700px;
+      }
+      .page04{width: 100%;
+    height: 700px;}
+    .page04_left{width: 100%;
+            height: 450px;
+
+    }       
+    .page04_left li{height: 450px;} 
+    .page04_right{width: 100%;
+            height: 300px;
+    
+    }
+    .page04_right .page04_list {margin: 0 auto;}
+    .page04_right .page04_list li{width: 24%;
+        float: left;
+        }
+
+    }
+
+@media screen and (max-width: 480px) {
+
+
+}

@@ -9,7 +9,12 @@
     <script src="/js/main.js"></script>
     <script>
         $(document).ready(function(){
+            $('.nav_in li span').hide()
+            $('.M_menu ').hide()
             $('.page04_list li').eq(0).addClass('on')
+            $('.M_button').click(function(){
+                $('.M_menu ').slideToggle()
+            })
             $('section').mouseenter(function(){
             $('.page05_content li video').hide()
 
@@ -71,9 +76,12 @@
             })
         
                 $('.nav_in li').hover(function(){
+                    var nav = $(this).index()
                     $(this).addClass('on')
+                    $('.nav_in li span').eq(nav).fadeIn()
                 },function(){
                      $(this).removeClass('on')
+                     $('.nav_in li span').fadeOut(500)
                 }
                 
                 )
@@ -187,6 +195,33 @@
 
         })
 
+        footer_hover()
+       $('.footer_content li').hide()
+       function footer_hover(){
+        $('.footer_left h1').hover(function(){
+            $(this).addClass('on')
+        },function(){
+        })
+
+        $('.footer_left h1').hover(function(){
+            $(this).addClass('on')
+            $('.footer_content li').fadeIn(800)
+        },function(){
+            $('.footer_left').removeClass('on')
+        }
+        )
+        $('.footer_content li').hover(function(){
+            $(this).addClass('on')
+        },function(){
+            $('.footer_content li').removeClass('on')
+        })
+        $('.footer_right').mouseleave(function(){
+            $('.footer_content li').fadeOut(200)
+            $('.footer_left h1').removeClass('on')
+        })
+       }
+
+
         })
 
     </script>
@@ -198,17 +233,36 @@
                 <h1 class="header_logo">logo</h1>
                 <nav>
                     <ul class="nav_in">
-                        <li><a href="#">A</a>
+                        <li><a href="#">A
+                            <span>menu</span>
+
+                        </a>
                           
                         </li>
-                        <li><a href="#">B</a></li>
-                        <li><a href="#">C</a></li>
-                        <li><a href="#">D</a></li>
+                        <li><a href="#">B</a>
+                            <span>menu</span>
+                        </li>
+                        <li><a href="#">C</a>
+                            <span>menu</span>
+                        </li>
+                        <li><a href="#">D</a>
+                            <span>menu</span>
+                        </li>
 
                      
 
-                    </ul>
+                    </ul>                    
                 </nav>
+                <div class="M_button"></div>
+                <div class="M_menu">
+                    <ul>
+                        <li>A Menu</li>
+                        <li>B Menu</li>
+                        <li>C Menu</li>
+                        <li>D Menu</li>
+
+                    </ul>
+                </div>
             </div>
         </header>
         <section class="page01_se">
@@ -666,6 +720,46 @@
                 </ul>
             </div>
         </section>
+         <footer>
+            <div class="footer_box">
+                <div class="footer_left">
+                    <h1>FOOTER PAGE</h1>
+                </div>
+                <div class="footer_right">
+                    <ul class="footer_content">
+                        <li>
+                        <h1>CONTTACT</h1>
+                            <div class="footer_text">
+                                <p>Footer page contact TEXT</p>
+                                <p>Footer page contact TEXT</p>
+                                <p>Footer page contact TEXT</p>
+                            </div>
+                        </li>
+                        <li>
+                            <h1>PRODUCTS</h1>
+                                <div class="footer_text">
+                                    <p>Footer page PRODUCTS TEXT</p>
+                                    <p>Footer page PRODUCTS TEXT</p>
+                                    <p>Footer page PRODUCTS TEXT</p>
+                                </div>
+                            </li>
+                            <li>
+                                <h1>Information</h1>
+                                    <div class="footer_text">
+                                        <p>Footer page Information Text</p>
+                                        <p>Footer page Information Text</p>
+                                        <p>Footer page Information Text</p>
+                                    </div>
+                                </li>
+                    </ul>
+    
+                </div>
+    
+                
+            </div>
+        </footer>
+
+
         
     </div>
     
